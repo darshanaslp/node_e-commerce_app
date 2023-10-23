@@ -10,23 +10,23 @@ Details contain below with the instruction how to run the app
 
 ## Project structure
 
-	├── app                   
+	├── app  
+		├──config			database configration
+		├──controller		all contollers
+		├──logs				error and run logs
+		├──middleware		authmiddleware
+		├──models			all models
+		├──public
+		├──routes			all routes
+		├──service			all services
+		├──util				validation,logger,error handling
 	├── config
-		├── auth  
-		├── database  
-    ├── models                
-		├── book
-		├── user
-    ├── controllers           
-		├── bookController	
-    ├── middleware            
-		├── authMiddleware	
-    ├── routes                
-		├── auth
-		├── book
-	├── migration
-	├── seeders
-    ├── test                  
+    ├── migration                
+    ├── models           
+    ├── seeders            
+    ├── tests                
+	├── .env
+    ├── app.js                  
     └── package.json          
 
 
@@ -35,7 +35,6 @@ Details contain below with the instruction how to run the app
 - Node Express
 - sequelize
 - axios
-- Jest
 
 
 ## How to run locally
@@ -58,7 +57,7 @@ App gonna be run `localhost:3000`
 
 ### Mysql credential
 
-Inside config -> database.js edit this regarding to mqsal database information 
+Inside app->config -> database.json edit this regarding to mqsal database information 
  
 const dbHost = 'yourhost';
 const dbPort = 'port';
@@ -116,11 +115,3 @@ Methods | Urls | Action
 **GET** | `api/products/cart` |  View Cart
 **POST** | `api/products/{productId}/add-to-cart` |  Add to Cart
 **GET**| `api/products/checkout` |  Checkout Product
-
-
-
-## Tests 
-
-Open Project
-
-Open node console run `npm test` to have jest start and watch the tests.
