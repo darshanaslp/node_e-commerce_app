@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "098a2b36-4a72-4d6d-8a0c-62d0cc9bd987",
+		"name": "Shops",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30673786"
+	},
+	"item": [
+		{
+			"name": "All Shops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/shops?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Shop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Example Shop\",\r\n  \"description\": \"This is a sample shop.\",\r\n  \"location\":\"Airport Terminal A\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/shops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Shop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/shops/{shopId}?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops",
+						"{shopId}"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Shop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Shop Name\",\r\n  \"description\": \"This shop has been updated.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/shops/{shopId}?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops",
+						"{shopId}"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Shop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/shops/{shopId}?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops",
+						"{shopId}"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shop Promotions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Special Promotion\",\r\n    \"description\": \"Get 20% off on all items!\",\r\n    \"startDate\": \"2023-10-25\",\r\n    \"endDate\": \"2023-11-10\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/shops/{shopId}/promotions?x-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"shops",
+						"{shopId}",
+						"promotions"
+					],
+					"query": [
+						{
+							"key": "x-auth-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsInJvbGUiOiJzeXN0ZW1BZG1pbiIsImlhdCI6MTY5ODAwMjk0MCwiZXhwIjoxNjk4MDA2NTQwfQ.Tz0HkKsijtiwYSGbdKRxd8886tHiW7w5TSbuAiVjvDw"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
