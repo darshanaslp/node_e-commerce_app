@@ -24,10 +24,12 @@ Details contain below with the instruction how to run the app
     ├── migration                
     ├── models           
     ├── seeders            
-    ├── tests                
+    ├── tests 
+	├── postman collection 	
 	├── .env
     ├── app.js                  
-    └── package.json          
+    └── package.json  
+        
 
 
 ## Tech used
