@@ -21,8 +21,8 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
-        username: 'admin1',
-        email: 'admin1@example.com',
+        username: 'shopAdmin',
+        email: 'shopAdmin@example.com',
         password: shopAdminPassword,
         role: 'shopAdmin', // Use 'shopAdmin' to match the model definition
         createdAt: new Date(),
@@ -30,15 +30,15 @@ module.exports = {
       },
       {
         username: 'customer1',
-        email: 'customer1@example.com',
+        email: 'customer@example.com',
         password: customerPassword,
         role: 'customer',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        username: 'admin2',
-        email: 'admin2@example.com',
+        username: 'systemAdmin',
+        email: 'systemAdmin@example.com',
         password: systemAdminPassword, // Use the same hashed password
         role: 'systemAdmin', // Add 'systemAdmin'
         createdAt: new Date(),
