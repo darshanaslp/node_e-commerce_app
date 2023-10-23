@@ -117,3 +117,22 @@ Methods | Urls | Action
 **GET** | `api/products/cart` |  View Cart
 **POST** | `api/products/{productId}/add-to-cart` |  Add to Cart
 **GET**| `api/products/checkout` |  Checkout Product
+
+
+## User Credentials
+
+### Admin
+Email :admin@example.com
+Password:admin_password
+
+### SystemAdmin
+Email :systemAdmin@example.com
+Password:systemadmin_password
+
+### ShopAdmin
+Email :shopAdmin@example.com
+Password:shopadmin_password
+
+### Customer
+Email :customer@example.com
+Password:customer_password
